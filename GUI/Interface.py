@@ -12,6 +12,7 @@ window.title("The Hangman Game")
 entry_var_server = tk.StringVar(window,"")
 entry_var_db = tk.StringVar(window,"")
 entry_var_driver = tk.StringVar(window,"")
+print("Sisva Testing 2")
 
 def window_widgets():
     db_ini_frame_top = tk.Frame(master=window,bg="#57b956",height=120,width=1400,highlightbackground="black",highlightthickness=2)
