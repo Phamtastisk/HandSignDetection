@@ -13,7 +13,6 @@ entry_var_server = tk.StringVar(window,"")
 entry_var_db = tk.StringVar(window,"")
 entry_var_driver = tk.StringVar(window,"")
 
-
 def window_widgets():
     db_ini_frame_top = tk.Frame(master=window,bg="#57b956",height=120,width=1400,highlightbackground="black",highlightthickness=2)
     db_ini_frame_left = tk.Frame(master=window,bg="light grey",height=800,width=120,colormap="new",highlightbackground="black",highlightthickness=2)

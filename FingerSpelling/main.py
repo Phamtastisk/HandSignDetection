@@ -5,7 +5,6 @@ import time
 
 def letterCaptureScript():
     letterCapture.letterCaptureStart()
-    print("Testing GitHub 101")
 
 def hangManScript():
     hangMan.hangManGame()
