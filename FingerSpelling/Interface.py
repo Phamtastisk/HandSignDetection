@@ -1,26 +1,15 @@
 import tkinter as tk
 import sys
 
-sys.path.append('/.../FingerSpelling/test')
-
 window = tk.Tk()
-window.geometry("1400x800")
-window.configure(bg="white")
-window.rowconfigure(20,weight=1)
-window.columnconfigure(35,weight=1)
+window.geometry("2000x1200")
 window.title("The Hangman Game")
-entry_var_server = tk.StringVar(window,"")
-entry_var_db = tk.StringVar(window,"")
-entry_var_driver = tk.StringVar(window,"")
-print("Sisva Testing 2")
 
 def window_widgets():
     db_ini_frame_top = tk.Frame(master=window,bg="#57b956",height=120,width=1400,highlightbackground="black",highlightthickness=2)
-    db_ini_frame_left = tk.Frame(master=window,bg="light grey",height=800,width=120,colormap="new",highlightbackground="black",highlightthickness=2)
     db_ini_main = tk.Frame(master=window,bg="light grey",height=800,width=120,colormap="new",highlightbackground="black",highlightthickness=2)
 
     db_ini_frame_top.pack(side="top", fill="x")
-    db_ini_frame_left.pack(side="left", fill="y")
     db_ini_main.pack(side="top", fill="both", expand=True)
 
     db_ini_label_top = tk.Label(master=db_ini_frame_top,text="HangMan",bg="#57b956")

@@ -4,6 +4,8 @@ from cvzone.ClassificationModule import Classifier
 import numpy as np
 import math
 import time
+import keyboard
+import pyautogui
 
 letterIndex = ""
 
@@ -65,6 +67,9 @@ def letterCaptureStart():
                     
             #cv2.imshow("ImageCrop", imgCrop)
             #cv2.imshow("ImageWhite", imgWhite)
-                    
+            if keyboard.is_pressed('space'):
+                pyautogui.hotkey("alt","tab")
+                time.sleep(1)
+                
         cv2.imshow("Image", imgOutput)
         cv2.waitKey(1)
